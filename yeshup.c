@@ -1,7 +1,7 @@
 /*
  * yeshup.c
  *
- * Wrapper to prevent child processes from becoming orphaned.
+ * Wrapper for Linux to prevent child processes from becoming orphaned.
  *
  * In Linux, when a parent process calls another process and the parent crashes
  * or is killed, the child process becomes an "orphan process."	yeshup signals
@@ -18,7 +18,7 @@
  *
  * yeshup ls -l
  *
- * Written originally for implement a feature in SetCPU. Works in Linux only,
+ * Written originally to implement a feature in SetCPU. Works in Linux only,
  * but should be compatible with most recent distributions, including Android.
  *
  * For a possible use case/scenario, see http://stackoverflow.com/a/13280892
