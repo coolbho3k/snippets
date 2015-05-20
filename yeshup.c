@@ -31,6 +31,8 @@
 int main(int argc, char **argv) {
      if(argc < 2)
           return 1;
+     /* When my parent is killed, give me SIGHUP */
      prctl(PR_SET_PDEATHSIG, SIGHUP, 0, 0, 0);
+     /* fork() wipes the parent death signal setting, but exec() does not! */
      return execvp(argv[1], &argv[1]);
 }
