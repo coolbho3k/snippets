@@ -12,14 +12,14 @@
  * spawning your child process, including all arguments normally. For example,
  * instead of running:
  *
- * ls -l
+ * child_process arguments
  *
  * You can simply run:
  *
- * yeshup ls -l
+ * yeshup child_process arguments
  *
  * Written originally to implement a feature in SetCPU. Works in Linux only,
- * but should be compatible with most recent distributions, including Android.
+ * but should be compatible with most distributions, including Android.
  *
  * For a possible use case/scenario, see http://stackoverflow.com/a/13280892
  */
